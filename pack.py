@@ -14,6 +14,7 @@ NEW_CLASSES = {
     "com/stockbridge/client/gui/colony_terminal/ColonyDemandRowRenderer.class",
     "com/stockbridge/client/integration/JeiIntegration.class",
     "com/stockbridge/client/integration/EmiIntegration.class",
+    "com/stockbridge/jade/StockBridgeJadePlugin.class",
     "com/stockbridge/integration/nsuk/NsukNeedsProvider.class",
     "com/stockbridge/integration/nsuk/NsukNeedsProvider$CachedNeeds.class",
     "com/stockbridge/integration/nsuk/NsukNeedsProvider$CitySnapshot.class",

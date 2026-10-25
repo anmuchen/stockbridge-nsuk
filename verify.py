@@ -11,6 +11,7 @@ CP_JARS = [
     os.path.expanduser("~") + r"/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/4.0.43/fb10b7bf2f568a9676ad8b426b19c23badbbd98a/loader-4.0.43.jar",
     r"E:\.minecraft\libraries\com\mojang\brigadier\1.3.10\brigadier-1.3.10.jar",
     r"E:\.minecraft\libraries\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar",
+    r"E:/WorkyBuddy AI/2026-10-24-11-26-27/tools/jade-15.10.5.jar",
     os.path.join(PROJ, "backups", "stockbridge-1.0.4-orig.jar"),
     os.path.join(PROJ, "dist", "stockbridge-1.0.4-nsuk.jar"),
 ]
@@ -76,6 +77,7 @@ def main():
         "com/stockbridge/client/gui/colony_terminal/ColonyDemandRowRenderer.class",
         "com/stockbridge/client/integration/JeiIntegration.class",
         "com/stockbridge/client/integration/EmiIntegration.class",
+        "com/stockbridge/jade/StockBridgeJadePlugin.class",
     ]
 
     unresolved_total = 0
