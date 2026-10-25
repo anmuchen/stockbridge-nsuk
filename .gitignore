@@ -1,0 +1,13 @@
+# 构建产物
+build/
+dist/
+*.class
+__pycache__/
+*.pyc
+
+# 原版模组备份（含原作者代码，不入库）
+backups/
+
+# 编辑器
+.vscode/
+.idea/
