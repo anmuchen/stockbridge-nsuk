@@ -17,6 +17,7 @@ FML = os.path.expanduser("~") + r"/.gradle/caches/modules-2/files-2.1/net.neofor
 BRIG = r"E:\.minecraft\libraries\com\mojang\brigadier\1.3.10\brigadier-1.3.10.jar"
 SLF4J = r"E:\.minecraft\libraries\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar"
 JADE = r"E:/WorkyBuddy AI/2026-10-24-11-26-27/tools/jade-15.10.5.jar"
+RS = r"E:/WorkyBuddy AI/2026-10-24-11-26-27/tools/refinedstorage-2.0.9.jar"
 ORIG = os.path.join(PROJ, "backups", "stockbridge-1.0.4-orig.jar")
 
 SOURCES = [
@@ -26,6 +27,7 @@ SOURCES = [
     "src/com/stockbridge/client/integration/JeiIntegration.java",
     "src/com/stockbridge/client/integration/EmiIntegration.java",
     "src/com/stockbridge/jade/StockBridgeJadePlugin.java",
+    "src/com/stockbridge/jade/ColonyDemandJadeProvider.java",
 ]
 
 
@@ -35,11 +37,11 @@ def run(cmd, **kw):
 
 
 def main():
-    for path in (NEARO, NSK, FML, BRIG, SLF4J, JADE, ORIG):
+    for path in (NEARO, NSK, FML, BRIG, SLF4J, JADE, RS, ORIG):
         if not os.path.isfile(path):
             raise SystemExit("missing dependency: " + path)
 
-    classpath = ";".join([NEARO, NSK, FML, BRIG, SLF4J, JADE, ORIG])
+    classpath = ";".join([NEARO, NSK, FML, BRIG, SLF4J, JADE, RS, ORIG])
     build_dir = os.path.join(PROJ, "build")
     if os.path.isdir(build_dir):
         import shutil
